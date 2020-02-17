@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Chp8 Test Automation Suite">
+    <parameter name="URL" value="https://google.ca/"/>
+
+    <test name = "Chp8 - Test On IE">
+        <parameter name = "BrowserType" value = "Internet Explorer"/>
+        <classes>
+            <class name = "chp8crossbrowsertesting.TestWebPageCrossBrowser"/>
+        </classes>
+    </test>
+
+    <test name = "Chp8 - Test On Firefox">
+        <parameter name = "BrowserType" value = "Firefox"/>
+        <classes>
+            <class name = "chp8crossbrowsertesting.TestWebPageCrossBrowser"/>
+        </classes>
+    </test>
+
+    <test name = "Chp8 - Test on Chrome">
+        <parameter name="BrowserType" value="Chrome"/>
+        <classes>
+            <class name = "chp8crossbrowsertesting.TestWebPageCrossBrowser"/>
+        </classes>
+    </test>
+
+</suite> <!-- Test Automation Suite -->
